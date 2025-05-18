@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 500px;
+    height: 300px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#dice {
+    width: 120px;
+    height: auto;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
+.animate {
+    animation-name: rotate;
+}
+
+#btn {
+    padding: 8px 16px;
+    font-size: 30px;
+    border-radius: 8px;
+    color: white;
+    background-color: #44cc00;
+    border: none;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #55ff00;
+}
+
+#hidden-container {
+    margin-top: 5px;
+    background-color: #c2d6d6;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.output {
+    display: none;
+}
+
+#hidden-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hidden-container li img {
+    width: 30px;
+    height: auto;
+}
+
+#hidden-container li {
+    list-style: none;
+}
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
